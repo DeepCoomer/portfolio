@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+  --primary-blue: #0000FF;
+  --hover-blue: #023e8a;
+}
+
+body{
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+/* Navbar */
+
+/* nav{
+  height: 65px;
+} */
+
+nav{
+  position: relative;
+  background: url('background.jpg') no-repeat;
+  z-index: 2;
+  /* background-size: cover;
+  background-position: center; */
+}
+
+nav a.nav-link{
+  /* font-weight: 500; */
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a{
+  display: inline-block !important;
+  position: relative !important;
+  top: -0.75rem !important;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-blue) !important;
+  border-bottom: 0.1875rem solid none;
+}
+
+.navbar-nav > li > a:hover{
+  border-bottom: 0.1875rem solid var(--primary-blue);
+}
+
+.active{
+  border-bottom: 0.1875rem solid var(--primary-blue);
+}
+
+.navbar-brand{
+  display: inline-block !important;
+  position: relative !important;
+  top: 1.625rem !important;
+  color: var(--primary-blue) !important;
+}
+
+.navbar-nav > li > a.active{
+  border-bottom: 0.1875rem solid var(--primary-blue);
+  color: var(--primary-blue) !important;
+}
+
+/* Header */
+
+.header-wraper{
+  position: relative;
+  background: url('background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto Condensed" sans-serif;
+  position: relative;
+  top: 300px;
+  right: 450px;
+}
+
+.main-info h2{
+  color: var(--primary-blue);
+  text-transform: uppercase;
+}
+
+.typed-text{
+  font-size: 2rem;
+  color: white
+}
+
+.btnn{
+  display: inline-block;
+  position: relative;
+  padding: 6px 17px;
+  margin: 7px 3px;
+  right: 80px;
+  background-color: #0000e6;
+  color: white;
+  border: 2px solid #0000e6;
+  border-radius: 7px;
+  cursor: pointer;
+  top: 25px;
+}
+
+.btn:hover{
+  background-color: #0000b3;
+  border: 2px solid #0000b3;
+}
+
+.btn1{
+  display: inline-block;
+  position: relative;
+  padding: 6px 17px;
+  margin: 7px 3px;
+  right: -70px;
+  top: -27px;
+  border: 2px solid #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.btn1:hover{
+  background-color: #d8d8d8;
+  border: 2px solid #d8d8d8;
+}
+
+.profilepic{
+  display: inline-block;
+  position: relative;
+  left: 761px;
+  top: -280px;
+}
+
+.imgFluid {
+  height: 250px;
+  width: 250px;
+  border-radius: 150px;
+}
+
+.fa {
+  display: inline-block;
+  position: relative;
+  left: 1013px;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-blue);
+  top: -539px;
+  cursor:pointer
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fainstagram {
+  color: var(--primary-blue);
+}
+
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+/* About */
+
+.aboutheader{
+  display: inline-block;
+  position: relative;
+  color: var(--primary-blue);
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+.aboutdes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+/* Skills */
+
+.skilsinfo{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+}
+
+.headerskills{
+  display: inline-block;
+  position: relative;
+  color: var(--primary-blue);
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+.containerskills {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} 
+.css {width: 80%; background-color: #04AA6D;} 
+.js {width: 75%; background-color: #04AA6D;} 
+.reactjs{width: 65%; background-color: #04AA6D;}
+.python{width: 60%; background-color: #04AA6D;}
+.flutter{width: 55%; background-color: #04AA6D;}
+.java{width: 50%; background-color: #04AA6D;}
+.nodejs{width: 45%; background-color: #04AA6D;}
+.expressjs{width: 45%; background-color: #04AA6D;}
+.mongodb{width: 40%; background-color: #04AA6D;}
+
+/* Projects */
+
+.projectsinfo{
+  display: flex;
+  position: relative;
+  top: 100px;
+}
+
+.projectsinfo h2{
+  color: var(--primary-blue);
+}
+
+.projects{
+  display: flex;
+  position: relative;
+  top: 50px;
+  justify-content: space-between;
+}
+
+.imgFluid1{
+  display: inline-block;
+  position: relative;
+  left: 50px;
+  height: 300px;
+  width: 300px;
+}
+
+.btnn2{
+  display: inline-block;
+  position: relative;
+  padding: 6px 17px;
+  margin: 7px 3px;
+  right: -110px;
+  background-color: #0000e6;
+  color: white;
+  border: 2px solid #0000e6;
+  border-radius: 7px;
+  cursor: pointer;
+  /* top: 25px; */
+}
+
+.btnn2:hover{
+  background-color: #0000b3;
+  border: 2px solid #0000b3;
+}
+
+.contact{
+  display: flex;
+  position: relative;
+  top: 180px;
+}
+
+.contact h2{
+  color: var(--primary-blue);
+}
+
+footer{
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  left: 617px;
+}
